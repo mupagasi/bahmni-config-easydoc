@@ -25,7 +25,7 @@ Bahmni.ConceptSet.FormConditions.rules = {
             };
         }
     },
-    'Cambodia_Head Circumference' : function (formName, formFieldValues, patient) {
+    'Cambodia_History of Present Illness' : function (formName, formFieldValues, patient) {
         var patientAge = patient['age'];
         var sections = {
             "show": [],
@@ -42,7 +42,7 @@ Bahmni.ConceptSet.FormConditions.rules = {
             };
         }
     },
-    'Cambodia_Newborn Immunizations Set' : function (formName, formFieldValues, patient) {
+    'Cambodia_Past Medical History Details' : function (formName, formFieldValues, patient) {
         var patientAge = patient['age'];
         var patientGender = patient['gender'];
         var sections = {
@@ -68,7 +68,7 @@ Bahmni.ConceptSet.FormConditions.rules = {
             };
         }
     },
-    'Cambodia_Child Immunizations Set' : function (formName, formFieldValues, patient) {
+    'Cambodia_Past Surgical History' : function (formName, formFieldValues, patient) {
         var patientAge = patient['age'];
         var patientGender = patient['gender'];
         var sections = {
@@ -94,7 +94,33 @@ Bahmni.ConceptSet.FormConditions.rules = {
             };
         }
     },
-    'Cambodia_Pregnant Women Immunizations Set' : function (formName, formFieldValues, patient) {
+    'Cambodia_Allergies' : function (formName, formFieldValues, patient) {
+        var patientAge = patient['age'];
+        var patientGender = patient['gender'];
+        var sections = {
+            "show": [],
+            "hide": []
+        };
+
+        if (patientAge < 1) {
+            return {
+                hide: ["Cambodia_Pregnant Women Immunizations Set"]
+            };
+        } else if (patientAge >= 1 && patientAge < 13) {
+            return {
+                hide: ["Cambodia_Pregnant Women Immunizations Set"]
+            };
+        } else if (patientAge >= 13 && patientGender == 'F') {
+            return {
+                show: ["Cambodia_Pregnant Women Immunizations Set"]
+            };
+        } else {
+            return {
+                hide: ["Cambodia_Pregnant Women Immunizations Set"]
+            };
+        }
+    },
+    'Cambodia_Pregnancy Number' : function (formName, formFieldValues, patient) {
         var patientAge = patient['age'];
         var patientGender = patient['gender'];
         var sections = {
@@ -395,7 +421,7 @@ Bahmni.ConceptSet.FormConditions.rules = {
             };
         }
     },
-    'Cambodia_Genitourinary Female Symptoms' : function (formName, formFieldValues, patient) {
+    'Cambodia_Progress Note' : function (formName, formFieldValues, patient) {
         var fieldValue = formFieldValues['Cambodia_Genitourinary Female Symptoms'];
         var patientGender = patient['gender'];
         var sections = {
