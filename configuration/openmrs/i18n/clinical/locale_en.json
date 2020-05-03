@@ -9,6 +9,7 @@
   "MODULE_LABEL_PRIORITY_KEY":"Priority",
   "MODULE_LABEL_QUEUE_KEY":"Queue",
   "MODULE_LABEL_AWAITING_VITALS": "Awaiting vitals",
+  "MODULE_LABEL_WAITING_ROOM": "Waiting Room",
   "IMPL_BP_PULSE":"BP / Pulse",
   "IMPL_GROWTH_CHART":"Growth Chart",
   "IMPL_BILLING_STATUS":"Billing Status",

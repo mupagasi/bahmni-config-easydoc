@@ -25,6 +25,19 @@
     "order": 2,
     "requiredPrivilege": "app:clinical"
   },
+  "bahmniClinicalPatientsSearchWaitingRoom": {
+    "id": "bahmni.clinical.patients.search.waitingRoom",
+    "extensionPointId": "org.bahmni.patient.search",
+    "type": "config",
+    "extensionParams": {
+      "searchHandler":"emrapi.sqlSearch.waitingRoom",
+      "translationKey": "MODULE_LABEL_WAITING_ROOM",
+      "forwardUrl": "#/default/patient/{{patientUuid}}/dashboard"
+    },
+    "label": "Waiting Room",
+    "order": 3,
+    "requiredPrivilege": "app:clinical"
+  },
   "bahmniClinicalPatientsSearchAllPatients": {
     "id": "bahmni.clinical.patients.search.allPatients",
     "extensionPointId": "org.bahmni.patient.search",
