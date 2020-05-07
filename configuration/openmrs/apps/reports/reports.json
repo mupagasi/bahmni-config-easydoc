@@ -1,0 +1,88 @@
+{
+  "visitReport10": {
+    "name": "Visit Report",
+    "type": "visits",
+    "requiredPrivilege": "app:reports",
+    "config": {
+      "forDataAnalysis": true,
+      "patientAttributes": [
+        "impl.socialStatus",
+        "impl.occupation",
+        "impl.email",
+        "phoneNumber",
+        "impl.insuranceCompany"
+      ],
+      "visitAttributes": [
+        "Visit Status",
+        "Admission Status"
+      ],
+      "patientAddresses": [
+        "address1",
+        "address2"
+      ],
+      "applyDateRangeFor": "visitStopDate",
+      "visitTypesToFilter": [
+        "Urgences",
+        "Ambulatoire"
+      ]
+    }
+  },
+  "chiefComplaintReport": {
+    "name": "Chief Complaint Report",
+    "type": "obsCount",
+    "config": {
+      "ageGroupName": "All Ages",
+      "conceptNames": [
+        "Chief Complaint"
+      ],
+      "countOnlyClosedVisits": "false"
+    }
+  },
+  "bloodPressure": {
+    "name": "Blood Pressure",
+    "type": "obsCount",
+    "config": {
+      "ageGroupName": "All Ages",
+      "conceptNames": [
+        "Systolic",
+        "Diastolic"
+      ],
+      "countOnlyClosedVisits": "false",
+      "countOncePerPatient": "false"
+    }
+  },
+  "patientReport": {
+    "name": "Patient Information",
+    "type": "PatientReport",
+    "requiredPrivilege": "app:reports"
+  },
+  "pivotReportForPrograms": {
+    "name": "Program Pivot Report",
+    "type": "aggregation",
+    "config": {
+      "report": {
+        "type": "programs",
+        "config": {
+          "patientAttributes": [],
+          "patientAddresses": [
+            "address2"
+          ],
+          "programAttributes": [],
+          "forDataAnalysis": true,
+          "showAllStates": true
+        }
+      },
+      "columnGroups": [
+        "Program name"
+      ],
+      "rowGroups": [
+        "Gender"
+      ],
+      "distinctGroups": [
+        "Patient Identifier"
+      ],
+      "showTotalRow": true,
+      "showTotalColumn": true
+    }
+  }
+}
