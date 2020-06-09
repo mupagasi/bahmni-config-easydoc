@@ -268,6 +268,7 @@
   "MODULE_LABEL_ACTIVE_PATIENTS_BY_LOCATION": "Patients/Emplacement",
   "MODULE_LABEL_ALL_KEY": "Tous",
   "MODULE_LABEL_AWAITING_VITALS": "En attente des signes vitaux",
+  "MODULE_LABEL_WAITING_ROOM": "Salle d'attente",
   "MODULE_LABEL_EMERGENCY_KEY": "Urgents",
   "MODULE_LABEL_MY_PATIENTS_KEY": "Mes Patients",
   "MODULE_LABEL_OPD_1_KEY": "OPD-1",
