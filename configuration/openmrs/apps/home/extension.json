@@ -60,14 +60,14 @@
     "order": 6,
     "requiredPrivilege": "app:reports"
   },
-  "appointmentScheduling": {
-    "id": "bahmni.appointment.scheduling",
+  "appointments": {
+    "id": "bahmni.appointment",
     "extensionPointId": "org.bahmni.home.dashboard",
     "type": "link",
     "translationKey": "MODULE_LABEL_APPOINTMENT_SCHEDULING_KEY",
-    "url": "../appointments",
+    "url": "../../appointments",
     "icon": "fa fa-calendar",
-    "order": 14,
+    "order": 9,
     "requiredPrivilege": "app:appointments"
   }
 }
