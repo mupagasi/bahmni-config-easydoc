@@ -166,7 +166,7 @@
         "translationKey": "IMPL_GROWTH_CHART",
         "config": {
           "yAxisConcepts": [
-            "BMI"
+            "WEIGHT"
           ],
           "referenceData": "charts/growthChartReference.csv",
           "numberOfVisits": 10

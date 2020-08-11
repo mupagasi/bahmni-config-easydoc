@@ -165,6 +165,16 @@
     },
     "requiredPrivilege": "app:clinical"
 },
+"bahmniClinicalConceptSetGroupObservationsConsultationSimpleForm": {
+  "id": "bahmni.clinical.conceptSetGroup.observations.ConsultationSimple",
+  "extensionPointId": "org.bahmni.clinical.conceptSetGroup.observations",
+  "type": "config",
+  "extensionParams": {
+    "default": true,
+    "conceptName": "Consultation (simple)"
+  },
+  "requiredPrivilege": "app:clinical"
+},
   "bahmniClinicalConceptSetGroupObservationsHistoryForm": {
     "id": "bahmni.clinical.conceptSetGroup.observations.HistoryForm",
     "extensionPointId": "org.bahmni.clinical.conceptSetGroup.observations",
