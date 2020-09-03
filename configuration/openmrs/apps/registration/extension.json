@@ -68,6 +68,20 @@
         },
         "order": 1,
         "requiredPrivilege": "Edit Visits"
+    },
+    "followUp":{
+        "id": "bahmni.registration.conceptSetGroup.followUp",
+        "extensionPointId": "org.bahmni.registration.conceptSetGroup.observations",
+        "type": "forms",
+        "extensionParams": {
+            "formName": "Follow up",
+            "conceptNames": ["Medical treatment started","Home assistance desired"],
+            "required":true,
+            "showLatest": true
+        },
+        "order": 3,
+        "requiredPrivilege": "Edit Visits"
     }
+
 
 }

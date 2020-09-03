@@ -211,7 +211,17 @@
         "type": "programs",
         "displayOrder": 91
       }
-    }
+    },
+    "followup": {
+      "type": "observation",
+      "title": "Follow up",
+      "isObservation": true,
+      "displayOrder":1001,
+      "dashboardConfig": {
+        "conceptNames": ["Medical treatment started", "Comments", "Home assistance desired"],
+          "scope": "latest"
+          }
+     }
   },
   "treatmentSummary": {
     "translationKey": "DASHBOARD_TAB_TREATMENT_SUMMARY_KEY",
